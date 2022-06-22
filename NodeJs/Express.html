@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Express学习 Express学习 | 前端小白</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="个人网站">
+    
+    <link rel="preload" href="/assets/css/0.styles.abc9894d.css" as="style"><link rel="preload" href="/assets/js/app.54845726.js" as="script"><link rel="preload" href="/assets/js/2.86f4cd79.js" as="script"><link rel="preload" href="/assets/js/7.0cd31e90.js" as="script"><link rel="prefetch" href="/assets/js/10.85c560f5.js"><link rel="prefetch" href="/assets/js/11.9d71c93f.js"><link rel="prefetch" href="/assets/js/12.fb99a66e.js"><link rel="prefetch" href="/assets/js/13.3b3c3b8e.js"><link rel="prefetch" href="/assets/js/14.1abddc44.js"><link rel="prefetch" href="/assets/js/15.a3b75ee5.js"><link rel="prefetch" href="/assets/js/16.10f039be.js"><link rel="prefetch" href="/assets/js/17.39a8caba.js"><link rel="prefetch" href="/assets/js/18.86fbc475.js"><link rel="prefetch" href="/assets/js/19.7505d371.js"><link rel="prefetch" href="/assets/js/20.c90daed7.js"><link rel="prefetch" href="/assets/js/21.cccc8f2b.js"><link rel="prefetch" href="/assets/js/22.015433c8.js"><link rel="prefetch" href="/assets/js/23.506d60a7.js"><link rel="prefetch" href="/assets/js/24.2f46d60d.js"><link rel="prefetch" href="/assets/js/25.1af165eb.js"><link rel="prefetch" href="/assets/js/26.8c0d3d33.js"><link rel="prefetch" href="/assets/js/27.327d1a1a.js"><link rel="prefetch" href="/assets/js/28.3a1efb77.js"><link rel="prefetch" href="/assets/js/29.83e06616.js"><link rel="prefetch" href="/assets/js/3.a48f0ffd.js"><link rel="prefetch" href="/assets/js/30.db87e782.js"><link rel="prefetch" href="/assets/js/31.2aa1e5c1.js"><link rel="prefetch" href="/assets/js/4.3b9e220c.js"><link rel="prefetch" href="/assets/js/5.ab31c756.js"><link rel="prefetch" href="/assets/js/6.3b330e45.js"><link rel="prefetch" href="/assets/js/8.5e2dedfa.js"><link rel="prefetch" href="/assets/js/9.3db69dd1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.abc9894d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端小白</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS样式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>NodeJs</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/NodeJs/NodeJs基本知识.html" class="sidebar-link">NodeJs基本知识</a></li><li><a href="/NodeJs/Express.html" aria-current="page" class="active sidebar-link">Express框架</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Less</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信小程序</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="express学习-express学习"><a href="#express学习-express学习" class="header-anchor">#</a> Express学习 <a href="https://www.expressjs.com.cn/" target="_blank" rel="noopener noreferrer">Express学习 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 在express中没有获取表单post请求体的API,这里我们需要使用一个第三方包,body-parser</span>
+<span class="token keyword">var</span> bodyParser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'body-parser'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 1、创建 app</span>
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// express静态服务</span>
+
+<span class="token comment">// 当以 /public/ 开头的时候 ，去 ./public/目录中查找对应的资源</span>
+<span class="token comment">// app.use('/public/',express.static('./public/'))</span>
+
+
+<span class="token comment">// 当省略第一个参数的时候，则可以通过省略 /public的方式 </span>
+<span class="token comment">//来访问  直接写 文件就行</span>
+<span class="token comment">// app.use(express.static('./public/'))</span>
+
+<span class="token comment">//  /a/ 替换  /public/  起别名  必须是/public/目录里的文件</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/a/'</span><span class="token punctuation">,</span>express<span class="token punctuation">.</span><span class="token function">static</span><span class="token punctuation">(</span><span class="token string">'./public/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 配置使用art-template模板引擎</span>
+<span class="token comment">// 第一次参数 当渲染以.art结尾的文件的时候,使用art-template模板引擎</span>
+<span class="token comment">// express-art-template 是专门用来express中吧art-template整合到express中</span>
+<span class="token comment">// 虽然外面不需要记载art-tempalte 但是也必须要安装</span>
+<span class="token comment">// 原因在于express-art-tempalte依赖了art-tempalte</span>
+app<span class="token punctuation">.</span><span class="token function">engine</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express-art-template'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Express为Response 响应对象提供了一个方法:render</span>
+<span class="token comment">// render 方法默认是不可以使用,如果配置了模板引擎就可以使用了</span>
+<span class="token comment">// res.render('html模板名',{模板数据})</span>
+<span class="token comment">// 第一个参数不能写路径 ,默认会去项目中的views目录查找该文件的模板</span>
+<span class="token comment">// 也就是说Express 有一个约定:开发人员把所有的视图文件都放在views目录中</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/admin'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	res<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'admin/index.html'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+		title<span class="token operator">:</span><span class="token string">&quot;管理系统sdx&quot;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'hello express,哈哈哈n你好呀！ nodemon'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">4000</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'express app is running.....'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">// 当post请求的时候 执行指定的处理函数</span>
+<span class="token comment">// 这样我们就可以使用不同的请求方法请求同一个路径</span>
+
+app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/post'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">// 1:获取表单post 请求数据</span>
+		<span class="token comment">// 在express中没有获取表单post请求体的API,这里我们需要使用一个第三方包,body-parser</span>
+		<span class="token comment">// 配置body-parse</span>
+		<span class="token comment">// 只要加入这个配置,则在req请求对象上会出来一个属性:body</span>
+		<span class="token comment">// 也就是说你可以直接通过 req.body 来获取post请求体数据了</span>
+
+		app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">{</span>extended<span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span>json<span class="token punctuation">)</span>
+	<span class="token comment">// 2: 处理</span>
+	<span class="token comment">// 3:响应</span>
+	<span class="token comment">// req.query 只能获取get请求参数</span>
+
+	<span class="token comment">// res.end()</span>
+	<span class="token comment">// res.redirect()</span>
+	<span class="token comment">// 这些方法 Express会自动结束响应</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/NodeJs/NodeJs基本知识.html" class="prev">
+        NodeJs基本知识
+      </a></span> <span class="next"><a href="/Vue/Router.html">
+        Router
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.54845726.js" defer></script><script src="/assets/js/2.86f4cd79.js" defer></script><script src="/assets/js/7.0cd31e90.js" defer></script>
+  </body>
+</html>
